@@ -20,14 +20,7 @@ allprojects {
     repositories {
         google()
         jcenter()
-        maven {
-            name = "GitHubPackages"
-            url = uri("https://maven.pkg.github.com/mogamusa31/test-library")
-            credentials {
-                username = USERNAME
-                password = ACCESS_TOKEN
-            }
-        }
+        maven { url 'https://jitpack.io' }
         
     }
 }
